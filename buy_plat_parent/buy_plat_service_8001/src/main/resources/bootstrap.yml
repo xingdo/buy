@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:1299 #配置服务器
+      label: master #分支
+      name: buy-config #github上面名称
+      #profile: ${spring.profiles.active} #环境
+      # java -jar -Dspring.profiles.active = dev xxx.jar
+      profile: dev

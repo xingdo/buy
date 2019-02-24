@@ -1,0 +1,19 @@
+server:
+  port: 1299
+spring:
+  application:
+    name: buy-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xingdo/buy_config.git  #git文件地址
+          username: 576963793@qq.com
+          password: zylwxyh1314..
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    prefer-ip-address: true
+

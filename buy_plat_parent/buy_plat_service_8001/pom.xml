@@ -42,5 +42,28 @@
         <artifactId>springfox-swagger-ui</artifactId>
         <version>2.9.2</version>
     </dependency>-->
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-config</artifactId>
+    </dependency>
 </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <!--springboot的maven插件-->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.4.1.RELEASE</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
